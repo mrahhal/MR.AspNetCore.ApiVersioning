@@ -7,14 +7,18 @@ namespace MR.AspNetCore.ApiVersioning
 	{
 		private static VersionDescriptor _invalid = new VersionDescriptor(-1, -1);
 		private static _Comparer _comparer = new _Comparer();
-		public int Major;
-		public int Minor;
+		private int _major;
+		private int _minor;
 
 		public VersionDescriptor(int major, int minor)
 		{
-			Major = major;
-			Minor = minor;
+			_major = major;
+			_minor = minor;
 		}
+
+		public int Major => _major;
+
+		public int Minor => _minor;
 
 		public static VersionDescriptor Parse(string version)
 		{
@@ -28,12 +32,12 @@ namespace MR.AspNetCore.ApiVersioning
 				return _invalid;
 			}
 
-			if (!int.TryParse(split[0], out v.Major))
+			if (!int.TryParse(split[0], out v._major))
 			{
 				return _invalid;
 			}
 
-			if (!int.TryParse(split[1], out v.Minor))
+			if (!int.TryParse(split[1], out v._minor))
 			{
 				return _invalid;
 			}
