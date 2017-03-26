@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc.ActionConstraints;
 
@@ -65,6 +66,8 @@ namespace MR.AspNetCore.ApiVersioning
 		}
 
 		public string Version { get; }
+
+		public IEnumerable<VersionDescriptor> Versions => _vds;
 
 		public int Order { get; set; }
 
