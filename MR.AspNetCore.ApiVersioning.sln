@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BDA2785C-793C-4225-8CC7-B8ABF5A47C65}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A772075A-8885-4D6B-ABFD-4D107A8BEEA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{8B46288A-09E9-4973-A2D2-9D9852B35041}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MR.AspNetCore.ApiVersioning", "src\MR.AspNetCore.ApiVersioning\MR.AspNetCore.ApiVersioning.csproj", "{8077ED76-53C1-4AE1-ACF2-E1B73C6F01F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MR.AspNetCore.ApiVersioning.Tests", "test\MR.AspNetCore.ApiVersioning.Tests\MR.AspNetCore.ApiVersioning.Tests.csproj", "{D12EDDDF-19CD-48DD-8E61-10FF3A820942}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{BB68B1B0-3F5B-4E47-97B3-C1A9ECBAFE4D}"
+	ProjectSection(SolutionItems) = preProject
+		build.cake = build.cake
+		build\index.cake = build\index.cake
+		build\util.cake = build\util.cake
+		build\version.cake = build\version.cake
+		build\version.props = build\version.props
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8077ED76-53C1-4AE1-ACF2-E1B73C6F01F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8077ED76-53C1-4AE1-ACF2-E1B73C6F01F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8077ED76-53C1-4AE1-ACF2-E1B73C6F01F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8077ED76-53C1-4AE1-ACF2-E1B73C6F01F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D12EDDDF-19CD-48DD-8E61-10FF3A820942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D12EDDDF-19CD-48DD-8E61-10FF3A820942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D12EDDDF-19CD-48DD-8E61-10FF3A820942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D12EDDDF-19CD-48DD-8E61-10FF3A820942}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8077ED76-53C1-4AE1-ACF2-E1B73C6F01F4} = {A772075A-8885-4D6B-ABFD-4D107A8BEEA0}
+		{D12EDDDF-19CD-48DD-8E61-10FF3A820942} = {8B46288A-09E9-4973-A2D2-9D9852B35041}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,22 @@
+# Suppress: EC116
+
+root = true
+
+[*]
+trim_trailing_whitespace = true
+
+[*.{cs,js,cshtml}]
+indent_size = 4
+indent_style = tab
+
+[*.{html,config}]
+indent_size = 2
+indent_style = tab
+
+[*.md]
+indent_size = 4
+indent_style = space
+
+[*.{css,scss,json,yaml}]
+indent_size = 2
+indent_style = space
