@@ -1,3 +1,3 @@
 dotnet --info
 dotnet restore
-dotnet test test/MR.AspNetCore.Jobs.Tests/MR.AspNetCore.Jobs.Tests.csproj -f netcoreapp1.1
+dotnet test test/MR.AspNetCore.ApiVersioning.Tests/MR.AspNetCore.ApiVersioning.Tests.csproj -f netcoreapp1.1
