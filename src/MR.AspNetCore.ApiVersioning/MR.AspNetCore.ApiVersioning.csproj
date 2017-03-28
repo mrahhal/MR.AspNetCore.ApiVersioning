@@ -11,7 +11,7 @@
 		<VersionPrefix>0.1.0</VersionPrefix>
 		<Authors>Mohammad Rahhal (@mrahhal)</Authors>
 		<Product></Product>
-		<Description></Description>
+		<Description>Simple api versioning for Asp.Net Core.</Description>
 		<Copyright>Copyright © Mohammad Rahhal. All rights Reserved</Copyright>
 		<PackageLicenseUrl></PackageLicenseUrl>
 		<PackageProjectUrl></PackageProjectUrl>
