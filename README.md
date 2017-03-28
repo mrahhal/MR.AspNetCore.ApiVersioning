@@ -27,14 +27,14 @@ public class UsersController : MyBaseController
 {
     // /api/v0.1/users
     // /api/v0.2/users
-    [ApiVersion("<0.1")]
+    [ApiVersion("<1.0")]
     public IActionResult Get()
     {
         // ...
     }
 
     // /api/v1.0/users
-    [ApiVersion(">=0.1")]
+    [ApiVersion(">=1.0")]
     public IActionResult GetV1()
     {
         // ...
